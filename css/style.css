@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+} /*universal selector to remove default magin and padding*/
+
 body {
   background-color: #1b2a4a;
+  padding: 24px;
 }
 
 h1 {
@@ -13,4 +19,13 @@ h2 {
 .btn-primary {
   background-color: #2d6be4;
   color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.account-card {
+  background-color: #eff3ff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
 }
