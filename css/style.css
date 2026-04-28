@@ -1,0 +1,16 @@
+body {
+  background-color: #1b2a4a;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #5b8def;
+}
+
+.btn-primary {
+  background-color: #2d6be4;
+  color: white;
+}
