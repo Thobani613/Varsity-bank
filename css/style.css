@@ -6,6 +6,7 @@
 body {
   background-color: #1b2a4a;
   padding: 24px;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -28,4 +29,102 @@ h2 {
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 12px;
+}
+
+#hero {
+  text-align: center;
+  padding: 56px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero img {
+  width: 200px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+#hero p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 300px;
+  margin-bottom: 12px;
+}
+
+#hero p:first-of-type {
+  font-size: 16px;
+  color: #5b8def;
+  font-weight: 500;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn-login {
+  background-color: #2d6be4;
+  color: white;
+  padding: 12px 32px;
+  font-weight: 500;
+}
+
+.btn-register {
+  background-color: transparent;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#trust {
+  padding: 12px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trust-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 13px 16px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.trust-card h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.08);
+}
+
+.trust-card p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+footer {
+  padding: 16px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+footer a {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
 }
