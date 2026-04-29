@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 } /*universal selector to remove default magin and padding*/
 
 body {
@@ -70,16 +71,12 @@ h2 {
   color: white;
   padding: 12px 32px;
   font-weight: 500;
-}
-
-.btn-register {
-  background-color: transparent;
-  color: white;
-  padding: 12px 32px;
   border-radius: 8px;
   text-decoration: none;
   font-size: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  width: 100%;
+  border: none;
+  cursor: pointer;
 }
 
 #trust {
@@ -103,7 +100,7 @@ h2 {
 .trust-card h3 {
   font-size: 13px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .trust-card p {
@@ -116,6 +113,7 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 footer p {
@@ -127,4 +125,98 @@ footer a {
   font-size: 11px;
   color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
+}
+
+.auth-hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.auth-hero img {
+  width: 200px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.auth-hero h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.auth-hero p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 500;
+}
+
+.field input {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: white;
+  outline: none;
+  width: 100%;
+}
+.forgot-password {
+  font-size: 14px;
+  color: #5b8def;
+  text-decoration: none;
+  text-align: right;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.divider p {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+}
+
+.btn-register {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 12px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
 }
