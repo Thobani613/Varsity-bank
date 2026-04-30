@@ -8,38 +8,60 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <div class="nav-links">
-          <a href="">Dashboard</a>
-          <a href="">Profile</a>
-          <a href="">Settings</a>
-          <a href="">Logout</a>
-        </div>
-      </nav>
-      <div class="user-info">
-        <h1>Welcome</h1>
-        <h2>Thobani Mjiyakho</h2>
-        <p>Account 246781214</p>
-      </div>
-    </header>
-
+    <div class="topbar">
+      <p class="greet">Good Morning</p>
+      <h3 class="greet-name">Thobani Mjiyakho</h3>
+    </div>
     <main>
       <section id="accounts">
-        <h2>My Accounts</h2>
-        <div class="account-card"><p>Account Balance: R468.95</p></div>
-        <div class="account-card"><p>Saving Account Balance: R1870.89</p></div>
-        <div class="account-card"><p>Outstanding Loan Balance: R0.00</p></div>
+        <div class="card-wrap" id="bank-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-top">
+                <img
+                  src="../assets/images/bank_logo.png"
+                  alt="Varsity Bank"
+                  class="card-logo"
+                />
+                <div class="card-chip">
+                  <div class="chip-line"></div>
+                  <div class="chip-line"></div>
+                  <div class="chip-line"></div>
+                </div>
+              </div>
+              <div class="card-balance-label">Main Account Balance</div>
+              <div class="card-balance">R 468.95</div>
+              <div class="card-bottom">
+                <div>
+                  <div class="card-holder-label">CARD HOLDER</div>
+                  <div class="card-holder-name">THOBANI MJIYAKHO</div>
+                  <div class="card-expiry">VALID THRU<span>09/29</span></div>
+                </div>
+
+                <div class="mastercard">
+                  <div class="mc-left"></div>
+                  <div class="mc-right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="flip-hint">Tap card to flip</p>
+
+        <div class="acc-cards">
+          <div class="acc-card">
+            <p class="acc-label">Savings</p>
+            <p class="acc-amount">R 1,870.89</p>
+          </div>
+
+          <div class="acc-card">
+            <p class="acc-label">Loan</p>
+            <p class="acc-amount">R 0.00</p>
+          </div>
+        </div>
       </section>
 
-      <section id="quick-actions">
-        <h2>Quick Actions</h2>
-        <button class="btn-primary">View Balance</button>
-        <button class="btn-primary">Pay Beneficiary</button>
-        <button class="btn-primary">Transfer Money</button>
-        <button class="btn-primary">View Statement</button>
-        <button class="btn-primary">Loan Balance</button>
-      </section>
+      <section id="quick-actions"></section>
 
       <section id="recent-transactions">
         <h2>Recent Transactions</h2>
